@@ -13,7 +13,7 @@ try:
     st.success("Model loaded successfully!")
     
 
-    num_images = st.slider("Number of images to generate", 1, 10, 5)
+    num_images = st.slider("Number of images to generate", 1, 66, 16)
     noise_dim = model.input_shape[1]  # Assumes the generator takes noise as input
     
     if st.button("Generate Images"):
